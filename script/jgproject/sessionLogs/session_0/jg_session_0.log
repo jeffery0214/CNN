@@ -1,0 +1,259 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2018.03
+# platform  : Linux 3.10.0-862.9.1.el7.x86_64
+# version   : 2018.03p001 64 bits
+# build date: 2018.04.24 18:13:05 PDT
+#----------------------------------------
+# started Thu May 07 17:48:40 CST 2020
+# hostname  : vlsicad8
+# pid       : 12878
+# arguments : '-label' 'session_0' '-console' 'vlsicad8:36666' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/user2/vlsi20/vlsi2091/Lab7/script/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/user2/vlsi20/vlsi2091/Lab7/script/jgproject/.tmp/.initCmds.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2018 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/user2/vlsi20/vlsi2091/Lab7/script/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_afl".
+INFO: reading configuration file "/home/user2/vlsi20/vlsi2091/.config/jasper/jaspergold.conf".
+% check_superlint -init
+% include /home/user2/vlsi20/vlsi2091/Lab7/script/superlint.tcl
+%% ##------------------Dont touch----------------------##
+%% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+%% 
+%% # Config rules
+%% config_rtlds -rule -enable -domain { LINT }
+%% config_rtlds -rule -disable -domain { DFT AUTO_FORMAL }
+%% 
+%% # ivcad2020_constrain //
+%% config_rtlds -rule  -disable -tag { IDN_NR_CKYW IDN_NR_SVKY NAM_NR_REPU MOD_NR_PGAT MOD_NO_IPRG FLP_NR_MXCS REG_NR_RWRC }
+%% config_rtlds -rule -disable -category {NAMING}
+%% config_rtlds -rule -disable -tag { INS_NR_INPR FLP_NO_ASRT OTP_NR_ASYA ASG_MS_RPAD ASG_NS_TRNB OPR_NR_UEOP OPR_NR_UREL OPR_NR_UCMP CAS_NR_UCIT INP_NO_USED} 
+%% # ivcad2020_constrain //
+%% 
+%% ##------------------Dont touch----------------------##
+%% 
+%% # import and elaborate design //
+%% analyze -v2k ../src/top.v +incdir+../src+../include; ## modify your file name ## 
+[-- (VERI-1482)] Analyzing Verilog file '../src/top.v'
+[INFO (VERI-1328)] ../src/top.v(7): analyzing included file '../src/MUX2to1_16b.v'
+[INFO (VERI-1328)] ../src/MUX2to1_16b.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(8): analyzing included file '../src/PE.v'
+[INFO (VERI-1328)] ../src/PE.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(9): analyzing included file '../src/Adder.v'
+[INFO (VERI-1328)] ../src/Adder.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(10): analyzing included file '../src/Relu.v'
+[INFO (VERI-1328)] ../src/Relu.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(11): analyzing included file '../src/MUX4to1_32b.v'
+[INFO (VERI-1328)] ../src/MUX4to1_32b.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(12): analyzing included file '../src/MUX2to1_32b.v'
+[INFO (VERI-1328)] ../src/MUX2to1_32b.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(13): analyzing included file '../src/Truncate.v'
+[INFO (VERI-1328)] ../src/Truncate.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(14): analyzing included file '../src/Pooling.v'
+[INFO (VERI-1328)] ../src/Pooling.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(15): analyzing included file '../src/Decoder.v'
+[INFO (VERI-1328)] ../src/Decoder.v(7): analyzing included file '../include/def.v'
+[INFO (VERI-1328)] ../src/top.v(16): analyzing included file '../src/Controller.v'
+[INFO (VERI-1328)] ../src/Controller.v(7): analyzing included file '../include/def.v'
+%% elaborate -bbox true -top top; ## modify your top module ##
+INFO (ISW003): Top module name is "top".
+[INFO (VERI-1018)] ../src/top.v(18): compiling module 'top'
+[INFO (VERI-1018)] ../src/MUX2to1_16b.v(9): compiling module 'MUX2to1_16b'
+[INFO (VERI-1018)] ../src/PE.v(9): compiling module 'PE'
+[INFO (VERI-1018)] ../src/Adder.v(9): compiling module 'Adder'
+[INFO (VERI-1018)] ../src/Relu.v(9): compiling module 'Relu'
+[INFO (VERI-1018)] ../src/MUX4to1_32b.v(9): compiling module 'MUX4to1_32b'
+[INFO (VERI-1018)] ../src/MUX2to1_32b.v(9): compiling module 'MUX2to1_32b'
+[INFO (VERI-1018)] ../src/Truncate.v(9): compiling module 'Truncate'
+[INFO (VERI-1018)] ../src/Pooling.v(9): compiling module 'Pooling'
+[INFO (VERI-1018)] ../src/Decoder.v(9): compiling module 'Decoder'
+[INFO (VERI-1018)] ../src/Controller.v(9): compiling module 'Controller'
+[WARN (VERI-1209)] ../src/Controller.v(499): expression size 32 truncated to fit in target size 17
+[WARN (VERI-1209)] ../src/Controller.v(528): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(533): expression size 32 truncated to fit in target size 17
+[WARN (VERI-1209)] ../src/Controller.v(559): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(574): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(584): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(598): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(662): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(665): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(733): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(793): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(805): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(808): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(815): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(827): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(830): expression size 32 truncated to fit in target size 13
+[WARN (VERI-1209)] ../src/Controller.v(883): expression size 32 truncated to fit in target size 17
+[WARN (VERI-1209)] ../src/Controller.v(898): expression size 32 truncated to fit in target size 17
+WARNING (WNL018): ../src/PE.v(57): multiply mult_16s_16s (size 32) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/PE.v(57): multiply mult_16s_16s (size 32) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/PE.v(57): multiply mult_16s_16s (size 32) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(498): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(499): multiply mult_2u_5u (size 7) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(499): multiply mult_4u_6u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(528): multiply mult_5u_4u (size 9) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(528): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(528): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(532): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(532): multiply mult_3u_5u (size 8) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(532): multiply mult_8u_5u (size 13) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(533): multiply mult_2u_5u (size 7) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(533): multiply mult_4u_6u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(533): multiply mult_3u_4u (size 7) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(559): multiply mult_32u_5u (size 37) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(559): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(559): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(574): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(574): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(574): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(584): multiply mult_32u_4u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(584): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(584): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(598): multiply mult_5u_4u (size 9) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(598): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(598): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(632): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(662): multiply mult_32u_4u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(662): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(662): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(665): multiply mult_5u_4u (size 9) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(665): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(665): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(670): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(670): multiply mult_3u_5u (size 8) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(670): multiply mult_8u_5u (size 13) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(704): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(733): multiply mult_5u_4u (size 9) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(733): multiply mult_4u_32u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(733): multiply mult_32u_32u (size 64) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(737): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(737): multiply mult_3u_5u (size 8) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(737): multiply mult_8u_5u (size 13) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(771): multiply mult_5u_5u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(771): multiply mult_4u_5u (size 9) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(771): multiply mult_9u_5u (size 14) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(793): multiply mult_32u_4u (size 36) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(793): multiply mult_4u_8u (size 12) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(805): multiply mult_5u_4u (size 9) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(805): multiply mult_4u_8u (size 12) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(808): multiply mult_31u_4u (size 35) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(808): multiply mult_4u_8u (size 12) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(815): multiply mult_32u_3u (size 35) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(815): multiply mult_4u_6u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(827): multiply mult_5u_3u (size 8) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(827): multiply mult_4u_6u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(830): multiply mult_31u_3u (size 34) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(830): multiply mult_4u_6u (size 10) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(883): multiply mult_8u_10u (size 18) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+WARNING (WNL018): ../src/Controller.v(898): multiply mult_8u_8u (size 16) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+top
+%% 
+%% # Setup clock and reset
+%% clock clk; ## modify your clock name ##
+%% reset rst; ## modify your reset name ##
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst".
+%% 
+%% # Extract checks
+%% check_superlint -extract
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL016): Extracted 0 STRUCTURAL checks.
+INFO (ISL016): Extracted 3 SYNTH checks.
+INFO (ISL016): Extracted 1 BASIC LINT checks.
+4
+%% 

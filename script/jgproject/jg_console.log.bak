@@ -1,0 +1,50 @@
+2020-05-06 17:47:19.879933 (11385) main____ INFO    ----------------------------------------
+2020-05-06 17:47:19.880113 (11385) main____ INFO    JasperGold version info
+2020-05-06 17:47:19.880143 (11385) main____ INFO      tool      : JasperGold 2018.03
+2020-05-06 17:47:19.880169 (11385) main____ INFO      version   : 2018.03p001 64 bits
+2020-05-06 17:47:19.880191 (11385) main____ INFO      build date: 2018.04.24 18:13:05 PDT
+2020-05-06 17:47:19.880208 (11385) main____ INFO    ----------------------------------------
+2020-05-06 17:47:19.880224 (11385) main____ INFO    Runtime info:
+2020-05-06 17:47:19.880244 (11385) main____ INFO      platform  : Linux 3.10.0-862.9.1.el7.x86_64 x86_64
+2020-05-06 17:47:19.880267 (11385) main____ INFO      hostname  : vlsicad8
+2020-05-06 17:47:19.880285 (11385) main____ INFO      pid       : 11385
+2020-05-06 17:47:19.880303 (11385) main____ INFO      arguments : '-style' 'windows' '-superlint'
+2020-05-06 17:47:19.880319 (11385) main____ INFO    ----------------------------------------
+2020-05-06 17:47:19.880335 (11385) main____ INFO    System resource limits info:
+2020-05-06 17:47:19.880354 (11385) main____ INFO      virtual memory: unlimited
+2020-05-06 17:47:19.880373 (11385) main____ INFO      cpu time      : unlimited
+2020-05-06 17:47:19.880403 (11385) main____ INFO      stack size    : 8388608 B
+2020-05-06 17:47:19.880431 (11385) main____ INFO      core file size: 0 B
+2020-05-06 17:47:19.880457 (11385) main____ INFO      open files    : 1024
+2020-05-06 17:47:19.880478 (11385) main____ INFO      file size     : unlimited
+2020-05-06 17:47:19.880494 (11385) main____ INFO    ----------------------------------------
+2020-05-06 17:47:19.880510 (11385) main____ INFO    Memory statistics:
+2020-05-06 17:47:19.880527 (11385) main____ INFO      total physical memory  : 28804600 kB
+2020-05-06 17:47:19.880543 (11385) main____ INFO      free physical memory   : 6433576 kB
+2020-05-06 17:47:19.880559 (11385) main____ INFO      committed address space: 15281356 kB
+2020-05-06 17:47:19.880574 (11385) main____ INFO    ----------------------------------------
+2020-05-06 17:47:19.880639 (11385) main____ INFO    Important environment variables:
+2020-05-06 17:47:19.880670 (11385) main____ INFO      DISPLAY        : 'localhost:27.0'
+2020-05-06 17:47:19.880696 (11385) main____ INFO      LM_LICENSE_FILE: '26000@lscic:1717@lsncku:5280@lsncku:5280@lscic:26585@lsncku:26585@lscic'
+2020-05-06 17:47:19.880714 (11385) main____ INFO    ----------------------------------------
+2020-05-06 17:47:19.882984 (11385) lic_core INFO    Initializing license system ...
+2020-05-06 17:47:19.884354 (11385) lic_core INFO    ... license system initialized.
+2020-05-06 17:47:19.886222 (11385) lic__man INFO    Claim 'main' for <ui>.
+2020-05-06 17:47:19.886288 (11385) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2020-05-06 17:47:20.067600 (11385) lic_core INFO    ... (1) checkout succeeded
+2020-05-06 17:47:20.067760 (11385) lic__man INFO    Claim 'superlint' for <ui>.
+2020-05-06 17:47:20.067813 (11385) lic_core INFO    (2) checking out 'jasper_afl' ...
+2020-05-06 17:47:20.251406 (11385) lic_core INFO    ... (2) checkout succeeded
+2020-05-06 17:47:21.850713 (11385) lic__man INFO    Claim 'superlint' for <ui>.
+2020-05-06 17:47:22.346610 (11385) lic__man INFO    Unclaim 'superlint' for <ui>.
+2020-05-06 17:47:22.346683 (11385) lic__man INFO    Claim 'superlint' for <ui>.
+2020-05-06 17:47:22.367122 (11385) session_ INFO    Starting analysis session with session id 'session_0' ...
+2020-05-06 17:47:22.369210 (11385) session_ INFO    Analysis session with session id 'session_0' started (pid: 11409)
+2020-05-06 17:47:27.515276 (11385) session_ INFO    Analysis session 'session_0' connected to the console (host: 192.168.100.8:38280)
+2020-05-06 17:47:30.947358 (11385) lic__man INFO    Unclaim everything for 'session_0'.
+2020-05-06 17:50:49.408958 (11385) lic__man INFO    Unclaim everything for 'session_0'.
+2020-05-06 17:50:50.210375 (11385) lic__man INFO    Unclaim everything for 'session_0'.
+2020-05-06 17:50:50.395208 (11385) lic__man INFO    Claim 'superlint' for 'session_0'.
+2020-05-06 17:58:51.131726 (11385) lic__man INFO    Entering idle state.
+2020-05-06 18:38:15.720088 (11385) lic__man INFO    Leaving idle state.
+2020-05-06 18:46:20.190471 (11385) lic__man INFO    Entering idle state.
